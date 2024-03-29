@@ -9,9 +9,8 @@ app.use('/api/blog',blogRouter);
 
 
 
-mongoose.connect('mongodb+srv://Astha:GugnTpp1ZXrj7eRS@cluster0.gojfxtd.mongodb.net/Blog?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('MongoDb Url')
 .then(()=>app.listen(5000))
 .then(()=>console.log("Connected to database and listening to localhost 5000"))
 .catch((err)=>console.log(err));
 
-// GugnTpp1ZXrj7eRS
